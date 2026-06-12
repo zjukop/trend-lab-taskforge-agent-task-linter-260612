@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "taskforge-agent-task-linter"
+version = "0.1.0"
+description = "Lint and upgrade coding tasks into agent-ready implementation specs."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "TaskForge Contributors" }]
+dependencies = []
+
+[project.scripts]
+taskforge = "taskforge.main:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
